@@ -19,13 +19,14 @@ struct ContentView: View {
         VStack {
             Button {
                 qrURL = nil
-                if ScreenshotQRCode(){
-                    image = RetrieveImage()
+                if let screenshotPath = screenshotToTempFile(),
+                   let image = RetrieveImage(url: screenshotPath){
                     print("taken screenshot")
                     if let qrString = decodeQrFromImage(from: image),
                        let url = URL(string: qrString) {
                         qrURL = url
                     }
+                    try? FileManager.default.removeItem(at: screenshotPath)
                 }
             } label: {
                 Text("Select QR code")
@@ -47,27 +48,22 @@ struct ContentView: View {
         
     }
     
-    func ScreenshotQRCode() -> Bool {
+    func screenshotToTempFile() -> URL? {
+        let tempDir = FileManager.default.temporaryDirectory
+        let fileURL = tempDir.appendingPathComponent("screenshot.png")
+        
         let task = Process()
         task.launchPath = "/usr/sbin/screencapture"
-        task.arguments = ["-sc"]
+        task.arguments = ["-s", fileURL.path]  // -s to allow selection, save to the temp filepath
+        
         task.launch()
         task.waitUntilExit()
-        let status = task.terminationStatus
-        
-        return status == 0
+        print("Task terminaltion status \(task.terminationStatus)")
+        return (task.terminationStatus == 0) ? fileURL : nil
     }
     
-    func RetrieveImage() -> NSImage {
-        let pasteboard = NSPasteboard.general
-        guard pasteboard.canReadItem(withDataConformingToTypes: NSImage.imageTypes) else {
-            return NSImage()
-        }
-        guard let image = NSImage(pasteboard: pasteboard) else {
-            return NSImage()
-        }
-        
-        return image
+    func RetrieveImage(url: URL) -> NSImage? {
+        return NSImage(contentsOf: url)
     }
     
     //    1. Create a VNDetectBarcodesRequest for qr code recognition, ensure to set the symbologies as .qr
