@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		470E473B2E4A066D00AA37AF /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 470E473A2E4A066D00AA37AF /* PythonKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		470E470E2E49EF3500AA37AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470E473B2E4A066D00AA37AF /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +112,6 @@
 			);
 			name = read_qr;
 			packageProductDependencies = (
-				470E473A2E4A066D00AA37AF /* PythonKit */,
 			);
 			productName = read_qr;
 			productReference = 470E46FF2E49EF3400AA37AF /* read_qr.app */;
@@ -202,7 +196,6 @@
 			mainGroup = 470E46F62E49EF3300AA37AF;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 470E47002E49EF3400AA37AF /* Products */;
@@ -554,25 +547,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pvieito/PythonKit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		470E473A2E4A066D00AA37AF /* PythonKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */;
-			productName = PythonKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 470E46F72E49EF3300AA37AF /* Project object */;
 }
