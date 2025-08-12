@@ -21,6 +21,7 @@ struct ContentView: View {
                 if ScreenshotQRCode(){
                     image = RetrieveImage()
                     print("taken screenshot")
+                    decodeQrFromImage(from: image)
                 }
             } label: {
                 Text("Select QR code")
@@ -55,5 +56,37 @@ struct ContentView: View {
         
         return image
     }
+    
+    //    1. Create a VNDetectBarcodesRequest for qr code recognition, ensure to set the symbologies as .qr
+    //    2. Receive the results of the qr detection request as arrays of VNBarcodeObservation objects.
+    //    The VNBarcodeObservation object contains:
+    //      An recognized payloadString (payloadStringValue) <- the decoding we want!!!
+    //    3. Use a handler to create a request and send a request for qr detection.
+
+    //
+    //
+    //    Create a request for image processing, and send a request for text recognition.
+        func decodeQrFromImage(from image: NSImage) {
+            guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else {
+                    print("Could not get CGImage from NSImage")
+                    return
+                }
+            print("got image")
+
+            let request = VNDetectBarcodesRequest { request, error in // 1
+                guard let observations = request.results as? [VNBarcodeObservation] else { return } // 2
+
+                for observation in observations {
+                    if let payload = observation.payloadStringValue {
+                                    print("QR Code String: \(payload)")
+                                }
+                }
+            }
+
+            request.symbologies = [.qr] // Only look for QR codes
+
+            let handler = VNImageRequestHandler(cgImage: cgImage, options: [:]) // 3
+            try? handler.perform([request]) // 3
+        }
     
 }
