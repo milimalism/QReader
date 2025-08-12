@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470E473B2E4A066D00AA37AF /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 470E473A2E4A066D00AA37AF /* PythonKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		470E470E2E49EF3500AA37AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470E46F72E49EF3300AA37AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470E46FE2E49EF3300AA37AF;
+			remoteInfo = read_qr;
+		};
+		470E47182E49EF3500AA37AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 470E46F72E49EF3300AA37AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470E46FE2E49EF3300AA37AF;
+			remoteInfo = read_qr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		470E46FF2E49EF3400AA37AF /* read_qr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = read_qr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		470E470D2E49EF3500AA37AF /* read_qrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = read_qrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		470E47172E49EF3500AA37AF /* read_qrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = read_qrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		470E47012E49EF3400AA37AF /* read_qr */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = read_qr;
+			sourceTree = "<group>";
+		};
+		470E47102E49EF3500AA37AF /* read_qrTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = read_qrTests;
+			sourceTree = "<group>";
+		};
+		470E471A2E49EF3500AA37AF /* read_qrUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = read_qrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		470E46FC2E49EF3300AA37AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470E473B2E4A066D00AA37AF /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E470A2E49EF3500AA37AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E47142E49EF3500AA37AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470E46F62E49EF3300AA37AF = {
+			isa = PBXGroup;
+			children = (
+				470E47012E49EF3400AA37AF /* read_qr */,
+				470E47102E49EF3500AA37AF /* read_qrTests */,
+				470E471A2E49EF3500AA37AF /* read_qrUITests */,
+				470E47002E49EF3400AA37AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		470E47002E49EF3400AA37AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				470E46FF2E49EF3400AA37AF /* read_qr.app */,
+				470E470D2E49EF3500AA37AF /* read_qrTests.xctest */,
+				470E47172E49EF3500AA37AF /* read_qrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		470E46FE2E49EF3300AA37AF /* read_qr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470E47212E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qr" */;
+			buildPhases = (
+				470E46FB2E49EF3300AA37AF /* Sources */,
+				470E46FC2E49EF3300AA37AF /* Frameworks */,
+				470E46FD2E49EF3300AA37AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				470E47012E49EF3400AA37AF /* read_qr */,
+			);
+			name = read_qr;
+			packageProductDependencies = (
+				470E473A2E4A066D00AA37AF /* PythonKit */,
+			);
+			productName = read_qr;
+			productReference = 470E46FF2E49EF3400AA37AF /* read_qr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		470E470C2E49EF3500AA37AF /* read_qrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470E47242E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qrTests" */;
+			buildPhases = (
+				470E47092E49EF3500AA37AF /* Sources */,
+				470E470A2E49EF3500AA37AF /* Frameworks */,
+				470E470B2E49EF3500AA37AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470E470F2E49EF3500AA37AF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				470E47102E49EF3500AA37AF /* read_qrTests */,
+			);
+			name = read_qrTests;
+			packageProductDependencies = (
+			);
+			productName = read_qrTests;
+			productReference = 470E470D2E49EF3500AA37AF /* read_qrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		470E47162E49EF3500AA37AF /* read_qrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470E47272E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qrUITests" */;
+			buildPhases = (
+				470E47132E49EF3500AA37AF /* Sources */,
+				470E47142E49EF3500AA37AF /* Frameworks */,
+				470E47152E49EF3500AA37AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				470E47192E49EF3500AA37AF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				470E471A2E49EF3500AA37AF /* read_qrUITests */,
+			);
+			name = read_qrUITests;
+			packageProductDependencies = (
+			);
+			productName = read_qrUITests;
+			productReference = 470E47172E49EF3500AA37AF /* read_qrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		470E46F72E49EF3300AA37AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					470E46FE2E49EF3300AA37AF = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					470E470C2E49EF3500AA37AF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 470E46FE2E49EF3300AA37AF;
+					};
+					470E47162E49EF3500AA37AF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 470E46FE2E49EF3300AA37AF;
+					};
+				};
+			};
+			buildConfigurationList = 470E46FA2E49EF3300AA37AF /* Build configuration list for PBXProject "read_qr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 470E46F62E49EF3300AA37AF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 470E47002E49EF3400AA37AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470E46FE2E49EF3300AA37AF /* read_qr */,
+				470E470C2E49EF3500AA37AF /* read_qrTests */,
+				470E47162E49EF3500AA37AF /* read_qrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		470E46FD2E49EF3300AA37AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E470B2E49EF3500AA37AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E47152E49EF3500AA37AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		470E46FB2E49EF3300AA37AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E47092E49EF3500AA37AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470E47132E49EF3500AA37AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		470E470F2E49EF3500AA37AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470E46FE2E49EF3300AA37AF /* read_qr */;
+			targetProxy = 470E470E2E49EF3500AA37AF /* PBXContainerItemProxy */;
+		};
+		470E47192E49EF3500AA37AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 470E46FE2E49EF3300AA37AF /* read_qr */;
+			targetProxy = 470E47182E49EF3500AA37AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		470E471F2E49EF3500AA37AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		470E47202E49EF3500AA37AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		470E47222E49EF3500AA37AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = read_qr/read_qr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "read-qr-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		470E47232E49EF3500AA37AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = read_qr/read_qr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "read-qr-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		470E47252E49EF3500AA37AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/read_qr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/read_qr";
+			};
+			name = Debug;
+		};
+		470E47262E49EF3500AA37AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/read_qr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/read_qr";
+			};
+			name = Release;
+		};
+		470E47282E49EF3500AA37AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qrUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = read_qr;
+			};
+			name = Debug;
+		};
+		470E47292E49EF3500AA37AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mythili.read-qrUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = read_qr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		470E46FA2E49EF3300AA37AF /* Build configuration list for PBXProject "read_qr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E471F2E49EF3500AA37AF /* Debug */,
+				470E47202E49EF3500AA37AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470E47212E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E47222E49EF3500AA37AF /* Debug */,
+				470E47232E49EF3500AA37AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470E47242E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E47252E49EF3500AA37AF /* Debug */,
+				470E47262E49EF3500AA37AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470E47272E49EF3500AA37AF /* Build configuration list for PBXNativeTarget "read_qrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470E47282E49EF3500AA37AF /* Debug */,
+				470E47292E49EF3500AA37AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		470E473A2E4A066D00AA37AF /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 470E47392E4A066D00AA37AF /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 470E46F72E49EF3300AA37AF /* Project object */;
+}
