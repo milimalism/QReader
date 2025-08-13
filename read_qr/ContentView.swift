@@ -47,11 +47,17 @@ struct ContentView: View {
                 }
                 qrURL = url
             } label: {
-                Text("Select QR code")
+                 Text("Select QR code")
+                     .font(.system(size: 13, weight: .regular))
+                     .foregroundColor(Color(red: 0.23, green: 0.23, blue: 0.23)) // Soft charcoal
+                     .padding(.horizontal, 20)
+                     .padding(.vertical, 10)
+                     .frame(maxWidth: .infinity)
+                     .background(Color(red: 0.66, green: 0.75, blue: 0.60)) // Soft mint
+                     .clipShape(RoundedRectangle(cornerRadius: 25))
             }
-            .padding()
+            .buttonStyle(PlainButtonStyle())
             
-            Text("Captured QR")
             
             Image(nsImage: image)
                 .resizable()
@@ -68,10 +74,28 @@ struct ContentView: View {
                     openURL(url)
                 }
             } label: {
-                Text("Open url!")
+                Text("Open URL!")
+                    .font(.system(size: 13, weight: .regular))
+                    .foregroundColor(qrURL == nil ?
+                        Color(red: 0.63, green: 0.60, blue: 0.58) : // Light gray when disabled
+                        Color(red: 0.23, green: 0.23, blue: 0.23)) // Soft charcoal when enabled
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .frame(maxWidth: .infinity)
+                    .background(qrURL == nil ?
+                        Color(red: 0.83, green: 0.82, blue: 0.81) :
+                        Color(red: 0.66, green: 0.75, blue: 0.60))
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
             }
+            .buttonStyle(PlainButtonStyle())
             .disabled(qrURL == nil)
-        }.padding()
+            
+            
+        }
+        .padding()
+        .background(
+            Color(red: 0.98, green: 0.97, blue: 0.96)
+        )
         
     }
     
