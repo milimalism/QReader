@@ -12,6 +12,7 @@ import Vision
 struct ContentView: View {
     @State private var image = NSImage()
     @State private var qrURL: URL? = nil
+    @State private var errorMessage: String? = nil
 
     @Environment(\.openURL) private var openURL
 
@@ -19,22 +20,48 @@ struct ContentView: View {
         VStack {
             Button {
                 qrURL = nil
-                if let screenshotPath = screenshotToTempFile(),
-                   let image = RetrieveImage(url: screenshotPath){
-                    print("taken screenshot")
-                    if let qrString = decodeQrFromImage(from: image),
-                       let url = URL(string: qrString) {
-                        qrURL = url
-                    }
-                    try? FileManager.default.removeItem(at: screenshotPath)
+                errorMessage = nil
+                
+                guard let screenshotPath = screenshotToTempFile() else {
+                    errorMessage = "Screenshot error"
+                    return
                 }
+                
+                guard let screenshotImage = RetrieveImage(url: screenshotPath) else {
+                    errorMessage = "Could not load screenshot."
+                    try? FileManager.default.removeItem(at: screenshotPath)
+                    return
+                }
+                
+                image = screenshotImage
+                guard let qrString = decodeQrFromImage(from: screenshotImage) else {
+                   errorMessage = "No QR code detected."
+                   try? FileManager.default.removeItem(at: screenshotPath)
+                   return
+               }
+
+                guard let url = URL(string: qrString) else {
+                   errorMessage = "QR code is not a valid URL."
+                   try? FileManager.default.removeItem(at: screenshotPath)
+                   return
+                }
+                qrURL = url
             } label: {
                 Text("Select QR code")
             }
+            .padding()
             
             Text("Captured QR")
             
             Image(nsImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+            
+            if let error = errorMessage {
+                    Text(error)
+                        .foregroundColor(.red)
+                }
             
             Button {
                 if let url = qrURL {
