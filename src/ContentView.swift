@@ -66,7 +66,7 @@ struct ContentView: View {
             
             if let error = errorMessage {
                     Text(error)
-                        .foregroundColor(.red)
+                        .foregroundColor(Color(red: 0.23, green: 0.23, blue: 0.23))
                 }
             
             Button {
@@ -89,10 +89,12 @@ struct ContentView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .disabled(qrURL == nil)
+            .padding(.bottom, 10)
             
             
         }
         .padding()
+        .padding(.vertical, 10)
         .background(
             Color(red: 0.98, green: 0.97, blue: 0.96)
         )

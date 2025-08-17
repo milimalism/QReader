@@ -16,5 +16,6 @@ struct ScreenshotApp: App {
         }
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
+        .defaultSize(width: 10, height: 400)
     }
 }
